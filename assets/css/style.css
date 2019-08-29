@@ -61,7 +61,7 @@ a {
 }
 .main {
   position: relative;
-  background-image: url(/assets/images/concrete_seamless.png);
+  background-image: url("/assets/images/concrete_seamless.png");
   padding-bottom: 200px;
   height: 100%;
   padding-top: 30px;
