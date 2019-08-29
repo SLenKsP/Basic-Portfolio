@@ -5,7 +5,6 @@
 body {
   margin: 0;
   font-size: 20px;
-  height: 100%;
 }
 
 h2 {
@@ -63,9 +62,12 @@ a {
 .main {
   position: relative;
   background-image: url(/assets/images/concrete_seamless.png);
-  padding-bottom: 40px;
+  padding-bottom: 200px;
+  height: 100%;
   padding-top: 30px;
   margin-top: 0;
+  /* margin-bottom: 20px; */
+  /* clear: both; */
 }
 .info {
   width: 960px;
@@ -73,26 +75,30 @@ a {
   background-color: #ffffff;
   border: 1px solid #dddddd;
 }
-.sectionhead{
-    margin-top: 0;
+.sectionhead {
+  margin-top: 0;
 }
 .section {
   padding: 25px;
   /* padding-top: 0; */
 }
 footer {
+  /* position: fixed; */
+  /* clear: both; */
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   padding-top: 30px;
   padding-bottom: 5px;
   margin-top: 10px;
   background-color: gray;
-  color:#ffffff;
+  color: #ffffff;
   bottom: 0;
   position: sticky;
   top: 0;
   z-index: 1;
   font-size: 20px;
+  height: 50px;
+  /* margin-top:-50px; */
 }
 /* **************** contact page css ********************* */
 input[type="text"],
