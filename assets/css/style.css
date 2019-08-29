@@ -1,3 +1,5 @@
+/* common css for all pages */
+
 * {
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
   color: #777777;
@@ -100,6 +102,16 @@ footer {
   height: 50px;
   /* margin-top:-50px; */
 }
+/* **************** about page css ********************* */
+
+
+
+
+/* **************** portfolio page css ********************* */
+
+
+
+
 /* **************** contact page css ********************* */
 input[type="text"],
 input[type="email"],
