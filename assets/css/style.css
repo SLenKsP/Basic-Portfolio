@@ -3,15 +3,19 @@
 * {
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
   color: #777777;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
   font-size: 20px;
+  background-color: #4aaaa5;
+  height: 100%;
 }
 
 h2 {
   font-family: "Georgia", Times, Times New Roman, serif;
   color: #4aaaa5;
+  font-size: 24px;
 }
 .myname {
   /* position: absolute; */
@@ -23,6 +27,7 @@ h2 {
   padding: 25px;
   line-height: 30px;
   margin: 0;
+  /* margin-bottom: 20px; */
   bottom: 0;
   text-align: center;
 }
@@ -34,18 +39,23 @@ button {
   padding: 20px;
   text-align: center;
 } */
-.container {
+.container{
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+}
+.menu {
   position: relative;
   width: 960px;
   height: 80px;
   margin: auto;
   background-color: #ffffff;
-  border-bottom: 1px solid #cccccc;
+  
 }
 .options {
   position: absolute;
   right: 0;
-  padding: 20px;
+  padding: 25px;
+  /* line-height: 30px; */
   padding-right: 0;
   bottom: 0;
   margin: 0;
@@ -65,10 +75,10 @@ a {
   text-decoration: none;
 }
 .main {
-  position: relative;
+  /* position: relative; */
   background-image: url("/assets/images/concrete_seamless.png");
   padding-bottom: 30px;
-  /* height: 100%; */
+  height: 100%;
   padding-top: 30px;
   margin-top: 0;
   /* overflow: scroll; */
@@ -83,14 +93,15 @@ a {
   border: 1px solid #dddddd;
   /* height: 100%; */
 }
-.sectionhead {
+.content-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
-.section {
+.content-section {
   padding: 25px;
   /* padding-top: 0; */
   overflow: auto;
+  /* height:400px; */
 }
 footer {
   /* position: fixed; */
@@ -106,17 +117,52 @@ footer {
   position: sticky;
   top: 0;
   z-index: 1;
-  font-size: 20px;
-  height: 40px;
+  font-size: 12px;
+  font-weight: inherit;
+  /* height: 60px; */
   /* margin-top:-50px; */
 }
 hr{
   margin: 10px 0;
+  margin-bottom: 0;
 }
 /* **************** about page css ********************* */
-.profile-image{
-
+.about-content{
+  position: relative;
+  /* padding:10px 0; */
+  white-space: nowrap;
 }
+
+.profile-image{
+  top:0;
+  float: left;
+  width: 270px;
+  /* height:250px; */
+  margin:0 20px;
+  margin-left: 0px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.about-brief{
+  top:0;
+  
+  line-height: 2em;
+  /* line-height-step: inherit; */
+  font-size: 18px;
+  padding-top: 0;
+  /* color:red; */
+  /* white-space: nowrap; */
+}
+
+.about-brief:nth-child(1)::first-line{
+  /* position: absolute; */
+  
+/* top: 0; */
+  /* color:red; */
+  
+}
+
 
 
 
@@ -153,22 +199,27 @@ textarea {
   border-style: inset;
   border: 1px solid;
   /* margin-right: 20px; */
+  margin-top: 5px;
 }
 textarea {
-  margin-top: 10px;
+  /* margin-top: 5px; */
 }
-label,
-button {
+label {
   /* line-height: 30px; */
-  vertical-align: -0.5em;
+  vertical-align: -1em;
   font-weight: bold;
   font-size: 18px;
+  bottom: 0
 }
 
 button {
   background-color: teal;
+  vertical-align: -1em;
+  font-size: 18px;
   /* font-size: 24px; */
-  padding: 5px 10px;
+  padding: 5px 20px;
   line-height: 1.5em;
   /* color: ; */
+  /* font-weight: inherit; */
+  border: none;
 }
