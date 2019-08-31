@@ -14,12 +14,14 @@ h2 {
   color: #4aaaa5;
 }
 .myname {
-  position: absolute;
+  /* position: absolute; */
   color: black;
   float: left;
+  /* height: 80px; */
   background-color: #4aaaa5;
   /* width:200px; */
-  padding: 20px 25px;
+  padding: 25px;
+  line-height: 30px;
   margin: 0;
   bottom: 0;
   text-align: center;
@@ -57,17 +59,20 @@ li {
 li:not(:first-child)::before {
   content: " | ";
   margin: 10px;
+  opacity: 0.1;
 }
 a {
   text-decoration: none;
 }
 .main {
   position: relative;
-  background-image: url("./assets/images/concrete_seamless.png");
-  padding-bottom: 200px;
-  height: 100%;
+  background-image: url("/assets/images/concrete_seamless.png");
+  padding-bottom: 30px;
+  /* height: 100%; */
   padding-top: 30px;
   margin-top: 0;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
   /* margin-bottom: 20px; */
   /* clear: both; */
 }
@@ -76,13 +81,16 @@ a {
   margin: auto;
   background-color: #ffffff;
   border: 1px solid #dddddd;
+  /* height: 100%; */
 }
 .sectionhead {
   margin-top: 0;
+  margin-bottom: 0;
 }
 .section {
   padding: 25px;
   /* padding-top: 0; */
+  overflow: auto;
 }
 footer {
   /* position: fixed; */
@@ -99,17 +107,40 @@ footer {
   top: 0;
   z-index: 1;
   font-size: 20px;
-  height: 50px;
+  height: 40px;
   /* margin-top:-50px; */
 }
+hr{
+  margin: 10px 0;
+}
 /* **************** about page css ********************* */
+.profile-image{
 
+}
 
 
 
 /* **************** portfolio page css ********************* */
 
-
+.images{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-color: #4aaaa5;
+  float: left;
+  margin: 10px;
+}
+.images p a{
+  position: absolute;
+  padding: 20px 0;
+  width: 100%;
+  /* margin: 5%; */
+  /* margin: 20px; */
+  background-color: gray;
+  bottom: 10px;
+  text-align: center;
+  color: #dddddd;
+}
 
 
 /* **************** contact page css ********************* */
