@@ -142,6 +142,7 @@ hr {
 
 .portfolio {
   margin-top: 10px;
+  margin-left: 0;
 }
 .images {
   position: relative;
@@ -150,6 +151,7 @@ hr {
   background-color: #4aaaa5;
   float: left;
   margin: 10px;
+  margin-left: 0;
 }
 .images p a {
   position: absolute;
